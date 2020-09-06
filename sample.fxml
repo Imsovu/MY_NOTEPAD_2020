@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+
+              <MenuItem fx:id="newFile" mnemonicParsing="false" onAction="#newFile" text="New" />
+
+              <MenuItem fx:id="openFile" mnemonicParsing="false" onAction="#openFile" text="Open" />
+
+              <MenuItem fx:id="saveFile" mnemonicParsing="false" onAction="#saveFile" text="Save" />
+
+              <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exit" text="Exit" />
+              
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+
+                <MenuItem fx:id="copy" mnemonicParsing="false" onAction="#copy" text="Copy" />
+
+              <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#delete" text="Delete" />
+
+                <MenuItem fx:id="selectAll" mnemonicParsing="false" onAction="#selectALl" text="Sellect All" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" onAction="#about" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+
+      </BorderPane>
+       <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+   </center>
+</BorderPane>
